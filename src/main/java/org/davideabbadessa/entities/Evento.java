@@ -40,7 +40,7 @@ public class Evento {
 
     public Evento() {
     }
-    
+
     public Evento(List<Partecipazione> listaPartecipazioni, Location location, int maxParticipants, EventType eventType, String description, LocalDate eventDate, String title) {
         this.listaPartecipazioni = listaPartecipazioni;
         this.location = location;
@@ -126,6 +126,6 @@ public class Evento {
     }
 
     public enum EventType {
-        CONFERENCE, MEETUP, WORKSHOP, WEBINAR
+        PRIVATO, PUBBLICO
     }
 }
